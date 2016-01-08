@@ -22,16 +22,16 @@
     <script>
 
 function initialize() {
-  var fenway = {lat: 48.8394806, lng: 2.3557833};
+  var fenway = {lat: 48.8610808, lng: 2.3749836};
   var map = new google.maps.Map(document.getElementById('map'), {
     center: fenway,
     zoom: 19
   });
 
-var flightPlanCoordinates = [{lat: 48.8394806, lng: 2.3557833},{lat: 48.8395705, lng: 2.3561736}];
+var flightPlanCoordinates = [{lat: 48.8610808, lng: 2.3749836},{lat: 48.8610578, lng: 2.3749278}];
 var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
 flightPath.setMap(map);
-var flightPlanCoordinates = [{lat: 48.8395705, lng: 2.3561736},{lat: 48.8396032, lng: 2.3562868}];
+var flightPlanCoordinates = [{lat: 48.8610578, lng: 2.3749278},{lat: 48.8609866, lng: 2.3747721}];
 var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
 flightPath.setMap(map);
 
@@ -40,7 +40,7 @@ flightPath.setMap(map);
       document.getElementById('pano'), {
         position: fenway,
         pov: {
-          heading: 66.2870189198, 
+          heading: -124.812080807, 
           pitch: 10
         }
       });

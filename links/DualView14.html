@@ -22,25 +22,19 @@
     <script>
 
 function initialize() {
-  var fenway = {lat: 48.8376612, lng: 2.3311709};
+  var fenway = {lat: 48.8364135, lng: 2.3535798};
   var map = new google.maps.Map(document.getElementById('map'), {
     center: fenway,
     zoom: 19
   });
 
-var flightPlanCoordinates = [{lat: 48.8376612, lng: 2.3311709},{lat: 48.8377772, lng: 2.3313192}];
+var flightPlanCoordinates = [{lat: 48.8364135, lng: 2.3535798},{lat: 48.8371904, lng: 2.3549316}];
 var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
 flightPath.setMap(map);
-var flightPlanCoordinates = [{lat: 48.8377772, lng: 2.3313192},{lat: 48.8381156, lng: 2.3317517}];
+var flightPlanCoordinates = [{lat: 48.8371904, lng: 2.3549316},{lat: 48.8372162, lng: 2.3550337}];
 var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
 flightPath.setMap(map);
-var flightPlanCoordinates = [{lat: 48.8381156, lng: 2.3317517},{lat: 48.8390352, lng: 2.3330349}];
-var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
-flightPath.setMap(map);
-var flightPlanCoordinates = [{lat: 48.8390352, lng: 2.3330349},{lat: 48.8392083, lng: 2.33331}];
-var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
-flightPath.setMap(map);
-var flightPlanCoordinates = [{lat: 48.8392083, lng: 2.33331},{lat: 48.8401821, lng: 2.3348063}];
+var flightPlanCoordinates = [{lat: 48.8372162, lng: 2.3550337},{lat: 48.8372147, lng: 2.3551311}];
 var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
 flightPath.setMap(map);
 
@@ -49,7 +43,7 @@ flightPath.setMap(map);
       document.getElementById('pano'), {
         position: fenway,
         pov: {
-          heading: 45.3000516311, 
+          heading: 91.3414537072, 
           pitch: 10
         }
       });

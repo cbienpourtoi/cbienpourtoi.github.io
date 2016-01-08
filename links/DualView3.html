@@ -22,13 +22,28 @@
     <script>
 
 function initialize() {
-  var fenway = {lat: 48.8358098, lng: 2.3525407};
+  var fenway = {lat: 48.8533113, lng: 2.3703109};
   var map = new google.maps.Map(document.getElementById('map'), {
     center: fenway,
     zoom: 19
   });
 
-var flightPlanCoordinates = [{lat: 48.8358098, lng: 2.3525407},{lat: 48.8362212, lng: 2.3532523}];
+var flightPlanCoordinates = [{lat: 48.8533113, lng: 2.3703109},{lat: 48.8533434, lng: 2.3703526}];
+var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
+flightPath.setMap(map);
+var flightPlanCoordinates = [{lat: 48.8533434, lng: 2.3703526},{lat: 48.8534504, lng: 2.3704626}];
+var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
+flightPath.setMap(map);
+var flightPlanCoordinates = [{lat: 48.8534504, lng: 2.3704626},{lat: 48.8540171, lng: 2.3710404}];
+var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
+flightPath.setMap(map);
+var flightPlanCoordinates = [{lat: 48.8540171, lng: 2.3710404},{lat: 48.8542429, lng: 2.3712707}];
+var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
+flightPath.setMap(map);
+var flightPlanCoordinates = [{lat: 48.8542429, lng: 2.3712707},{lat: 48.8543038, lng: 2.3713607}];
+var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
+flightPath.setMap(map);
+var flightPlanCoordinates = [{lat: 48.8543038, lng: 2.3713607},{lat: 48.8543359, lng: 2.3714113}];
 var flightPath = new google.maps.Polyline({path: flightPlanCoordinates, geodesic: true, strokeColor: '#0000ff', strokeOpacity: 1.0, strokeWeight: 2});
 flightPath.setMap(map);
 
@@ -37,7 +52,7 @@ flightPath.setMap(map);
       document.getElementById('pano'), {
         position: fenway,
         pov: {
-          heading: 48.6819389575, 
+          heading: 46.0318109387, 
           pitch: 10
         }
       });
